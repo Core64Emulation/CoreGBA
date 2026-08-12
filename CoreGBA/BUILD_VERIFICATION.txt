@@ -1,0 +1,19 @@
+CoreGBA v0.3.4 Emulator-Only Build Verification
+================================================
+
+PASS: GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go vet ./cmd/coregba
+PASS: Windows x64 GUI cross-build completed.
+PASS: Red CoreGBA.ico embedded into CoreGBA.exe.
+PASS: Output begins with a valid Windows PE MZ header.
+PASS: Native no-game artwork source matches the official 1024px mGBA resource length (471,284 bytes).
+PASS: Red CoreGBA replacement keeps the exact same resource length (471,284 bytes).
+PASS: Replacement qCompress/zlib payload fits inside the original compressed resource capacity.
+PASS: CoreGBA patches raw or Qt-compressed copies of the native no-game artwork in-place.
+PASS: Native emulator title/taskbar icon is changed through Win32 WM_SETICON.
+PASS: Native title branding remains event-driven with SetWinEventHook; no polling loop.
+PASS: Setup/installer was not modified by this emulator-only package.
+
+CoreGBA.exe SHA-256: b76e4c86ba76ee4cdd30fb22116df5a011a249aee2dc972104f0b34fad93c8bf
+Red artwork SHA-256: 3ae9f06967d9f3a71c8205d0d5cef944d143c48946b8959a1bdbd125e5fb80a2
+
+Runtime note: the Windows GUI itself cannot be launched inside this Linux build environment.

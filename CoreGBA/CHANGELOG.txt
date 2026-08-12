@@ -1,0 +1,11 @@
+CoreGBA v0.3.4 - Emulator Only
+===============================
+
+- Replaced the purple no-game handheld artwork with a red CoreGBA handheld.
+- Replaced the mGBA text shown inside that handheld screen with CoreGBA branding.
+- Recolored the CoreGBA desktop/application icon to red.
+- Applies the CoreGBA icon to the native emulator title bar/taskbar window.
+- Keeps the v0.3.3 green/red controller-mapping artwork.
+- Keeps event-driven native title branding with Win32 SetWinEventHook.
+- No setup/installer changes.
+- No frontend/dashboard added.
